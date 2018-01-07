@@ -1,298 +1,387 @@
 [
   {
     "item": "Minify CSS and JS, and remove unused/redundant code",
-    "resources": ["https://developers.google.com/speed/docs/insights/MinifyResources"]
+    "resources": ["https://developers.google.com/speed/docs/insights/MinifyResources"],
+    "tags": ["implementation"]
   },
   {
     "item": "Maintain terse HTML, without over-reliance on `<div>` scaffolding",
-    "resources": ["http://designingforperformance.com/optimizing-markup-and-styles/#divitis"]
+    "resources": ["http://designingforperformance.com/optimizing-markup-and-styles/#divitis"],
+    "tags": ["implementation", "html"]
   },
   {
     "item": "Use screen reader and keyboard accessible HTML",
-    "resources": ["https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"]
+    "resources": ["https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML"],
+    "tags": ["implementation", "html"]
   },
   {
     "item": "Compress raster images",
-    "resources": ["https://www.html5rocks.com/en/tutorials/speed/img-compression/"]
+    "resources": ["https://www.html5rocks.com/en/tutorials/speed/img-compression/"],
+    "tags": ["implementation"]
   },
   {
     "item": "Optimize SVG path data",
-    "resources": ["https://web-design-weekly.com/2014/10/22/optimizing-svg-web/"]
+    "resources": ["https://web-design-weekly.com/2014/10/22/optimizing-svg-web/"],
+    "tags": ["implementation"]
   },
   {
     "item": "Make sure heading levels describe a logical section/subsection structure",
-    "resources": ["https://webaim.org/techniques/semanticstructure/"]
+    "resources": ["https://webaim.org/techniques/semanticstructure/"],
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Only include heading elements where they introduce sections of content"
+    "item": "Only include heading elements where they introduce sections of content",
+    "tags": ["implementation", "html"]
   },
   {
     "item": "Remove potentially insensitive or uninclusive language (use \"singular they\")",
-    "resources": ["http://alexjs.com/"]
+    "resources": ["http://alexjs.com/"],
+    "tags": ["content", "ethics"]
   },
   {
-    "item": "Give video content captions and transcripts"
+    "item": "Give video content captions and transcripts",
+    "tags": ["implementation", "content"]
   },
   {
-    "item": "Provide transcripts for audio content"
+    "item": "Provide transcripts for audio content",
+    "tags": ["implementation", "content"]
   },
   {
     "item": "Make sure main body (paragraph) text is no smaller than the default (user agent) size",
-    "resources": ["https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/"]
+    "resources": ["https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/"],
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
-    "item": "Support \"pinch zoom\" (remove `user-scalable=no` if present)"
+    "item": "Support \"pinch zoom\" (remove `user-scalable=no` if present)",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Use relative units (`em`, `rem`, and `ch`), especially for font metrics"
+    "item": "Use relative units (`em`, `rem`, and `ch`), especially for font metrics",
+    "tags": ["implementation", "css"]
   },
   {
     "item": "Make sure styles and scripts are not render blocking",
-    "resources": ["https://csabapalfi.github.io/eliminate-render-blocking/"]
+    "resources": ["https://csabapalfi.github.io/eliminate-render-blocking/"],
+    "tags": ["implementation", "performance"]
   },
   {
     "item": "Install a service worker and cache all applicable assets",
-    "resources": ["https://css-tricks.com/serviceworker-for-offline/"]
+    "resources": ["https://css-tricks.com/serviceworker-for-offline/"],
+    "tags": ["implementation", "performance"]
   },
   {
     "item": "Use content-based, not device-specific, media queries",
-    "resources": ["http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/#content"]
+    "resources": ["http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/#content"],
+    "tags": ["implementation", "css"]
   },
   {
-    "item": "Provide alternatives and/or descriptions for complex visualizations"
+    "item": "Provide alternatives and/or descriptions for complex visualizations",
+    "tags": ["implementation", "content"]
   },
   {
-    "item": "Include only clear, meaningful animations"
+    "item": "Include only clear, meaningful animations",
+    "tags": ["content"]
   },
   {
-    "item": "Honor requests to remove animation via the `prefers-reduced-motion` media query"
+    "item": "Honor requests to remove animation via the `prefers-reduced-motion` media query",
+    "tags": ["implementation", "css", "ethics"]
   },
   {
     "item": "Make sure controls do not elicit unexpected or jarring behavior",
-    "resources": ["https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html", "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html"]
+    "resources": ["https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html", "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html"],
+    "tags": ["implementation"]
   },
   {
     "item": "Do not include third parties that compromise user privacy",
-    "resources": ["https://css-tricks.com/potential-dangers-of-third-party-javascript/"]
+    "resources": ["https://css-tricks.com/potential-dangers-of-third-party-javascript/"],
+    "tags": ["implementation", "ethics"]
   },
   {
-    "item": "Do not recreate supported and expected browser behaviors with bespoke scripts"
+    "item": "Do not recreate supported and expected browser behaviors with bespoke scripts",
+    "tags": ["implementation", "performance"]
   },
   {
     "item": "Support Windows high contrast mode (use images, not background images)",
-    "resources": ["http://adrianroselli.com/2012/08/css-background-images-high-contrast-mode.html"]
+    "resources": ["http://adrianroselli.com/2012/08/css-background-images-high-contrast-mode.html"],
+    "tags": ["implementation", "css"]
   },
   {
     "item": "Provide alternative text for salient images",
-    "resources": ["https://www.w3.org/WAI/tutorials/images/decision-tree/"]
+    "resources": ["https://www.w3.org/WAI/tutorials/images/decision-tree/"],
+    "tags": ["content", "implementation", "html"]
   },
   {
     "item": "Apply `alt=\"` or `aria-hidden=\"true\"` to decorative images",
-    "resources": ["https://www.w3.org/WAI/tutorials/images/decorative/"]
+    "resources": ["https://www.w3.org/WAI/tutorials/images/decorative/"],
+    "tags": ["content", "implementation", "html"]
   },
   {
     "item": "Make sure text and background colors contrast sufficiently",
-    "resources": ["https://accessibility.blog.gov.uk/2016/06/17/colour-contrast-why-does-it-matter/"]
+    "resources": ["https://accessibility.blog.gov.uk/2016/06/17/colour-contrast-why-does-it-matter/"],
+    "tags": ["visual-design"]
   },
   {
     "item": "Provide `<title>`s that name the site and the specific page",
-    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/G88.html"]
+    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/G88.html"],
+    "tags": ["content", "implementation", "html"]
   },
   {
     "item": "Provide large touch \"targets\" for interactive elements",
-    "resources": ["http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/design/touch-target-size"]
+    "resources": ["http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/design/touch-target-size"],
+    "tags": ["visual-design"]
   },
   {
-    "item": "Use data tables (`<table>`) for data only, not visual layout purposes"
+    "item": "Use data tables (`<table>`) for data only, not visual layout purposes",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Make scrollable elements focusable for keyboard users"
+    "item": "Make scrollable elements focusable for keyboard users",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Do not rely on color for differentiation of visual elements"
+    "item": "Do not rely on color for differentiation of visual elements",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Use the same design patterns to solve the same problems"
+    "item": "Use the same design patterns to solve the same problems",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Ensure keyboard focus order is logical regarding visual layout"
+    "item": "Ensure keyboard focus order is logical regarding visual layout",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Lazy load large image assets"
+    "item": "Lazy load large image assets",
+    "tags": ["performance", "implementation"]
   },
   {
     "item": "Honour DNT (Do Not Track) header",
-    "resources": ["https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT"]
+    "resources": ["https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT"],
+    "tags": ["ethics", "implementation"]
   },
   {
-    "item": "Translate / spell out acronyms the first time you use them"
+    "item": "Translate / spell out acronyms the first time you use them",
+    "tags": ["content", "implementation", "html"]
   },
   {
-    "item": "Do not hijack standard scrolling behavior"
+    "item": "Do not hijack standard scrolling behavior",
+    "tags": ["implementation", "javascript"]
   },
   {
-    "item": "Move focus between dialogs and the controls that invoked them"
+    "item": "Move focus between dialogs and the controls that invoked them",
+    "tags": ["implementation", "javascript"]
   },
   {
-    "item": "Give all form elements permanently visible labels"
+    "item": "Give all form elements permanently visible labels",
+    "tags": ["content", "implementation", "html"]
   },
   {
-    "item": "Give grouped form elements group labels"
+    "item": "Give grouped form elements group labels",
+    "tags": ["content", "implementation", "html"]
   },
   {
-    "item": "Place labels above form elements"
+    "item": "Place labels above form elements",
+    "tags": ["implementation", "html", "content"]
   },
   {
-    "item": "Provide status and error messages as WAI-ARIA live regions"
+    "item": "Provide status and error messages as WAI-ARIA live regions",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Provide clear, unambiguous focus styles"
+    "item": "Provide clear, unambiguous focus styles",
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
-    "item": "Employ well-balanced, highly legible fonts (not too complex or elaborate)"
+    "item": "Employ well-balanced, highly legible fonts (not too complex or elaborate)",
+    "tags": ["visual-design"]
   },
   {
     "item": "Do not use very thin font faces",
-    "resources":["http://www.telegraph.co.uk/science/2016/10/23/internet-is-becoming-unreadable-because-of-a-trend-towards-light/"]
+    "resources":["http://www.telegraph.co.uk/science/2016/10/23/internet-is-becoming-unreadable-because-of-a-trend-towards-light/"],
+    "tags": ["visual-design"]
   },
   {
-    "item": "Ensure states (pressed, expanded, invalid, etc) are communicated to assistive software"
+    "item": "Ensure states (pressed, expanded, invalid, etc) are communicated to assistive software",
+    "tags": ["implementation", "html", "javascript"]
   },
   {
-    "item": "Match semantics to behavior for assistive technology users"
+    "item": "Match semantics to behavior for assistive technology users",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Provide a default language and use `lang=\"[ISO code]\"` for subsections in different languages"
+    "item": "Provide a default language and use `lang=\"[ISO code]\"` for subsections in different languages",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Make controls look like controls; give them strong perceived affordance"
+    "item": "Make controls look like controls; give them strong perceived affordance",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Underline links — at least in body copy"
+    "item": "Underline links — at least in body copy",
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
-    "item": "Make sure all content belongs to a landmark element (`<header>`, `<footer>`, `<nav>`, `<main>`, etc)"
+    "item": "Make sure all content belongs to a landmark element (`<header>`, `<footer>`, `<nav>`, `<main>`, etc)",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Avoid pure white or pure black shades"
+    "item": "Avoid pure white or pure black shades",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Mark invalid fields clearly and provide associated error messages"
+    "item": "Mark invalid fields clearly and provide associated error messages",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Ensure content is not obscured through zooming (no fixed widths)"
+    "item": "Ensure content is not obscured through zooming (no fixed widths)",
+    "tags": ["implementation", "css"]
   },
   {
-    "item": "Provide a `manifest.json` file for identifiable homescreen entries"
+    "item": "Provide a `manifest.json` file for identifiable homescreen entries",
+    "tags": ["implementation"]
   },
   {
-    "item": "Indicate swipe gesture support clearly, and provide simple tap-based alternatives"
+    "item": "Indicate swipe gesture support clearly, and provide simple tap-based alternatives",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Make sure data tables wider than their container can be scrolled horizontally"
+    "item": "Make sure data tables wider than their container can be scrolled horizontally",
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
-    "item": "Avoid time constraints where possible; provide a clear warning and option to extend where not possible "
+    "item": "Avoid time constraints where possible; provide a clear warning and option to extend where not possible",
+    "tags": ["visual-design", "content"]
   },
   {
-    "item": "Label and describe the same things with the same terminology"
+    "item": "Label and describe the same things with the same terminology",
+    "tags": ["content"]
   },
   {
-    "item": "Ensure disabled controls are not focusable"
+    "item": "Ensure disabled controls are not focusable",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Do not instate \"infinite scroll\" by default; provide buttons to load more items"
+    "item": "Do not instate \"infinite scroll\" by default; provide buttons to load more items",
+    "tags": ["visual-design"]
   },
   {
     "item": "Avoid justified body text",
-    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/F88.html"]
+    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/F88.html"],
+    "tags": ["visual-design"]
   },
   {
     "item": "Provide enough spacing between lines of text (`line-height`)",
-    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/C21.html"]
+    "resources": ["https://www.w3.org/TR/WCAG20-TECHS/C21.html"],
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
     "item": "Ensure PDF content is accessible (include tags)",
-    "resources": ["https://webaim.org/techniques/acrobat/"]
+    "resources": ["https://webaim.org/techniques/acrobat/"],
+    "tags": ["content"]
   },
   {
-    "item": "Provide a skip link if necessary ",
-    "resources": ["https://webaim.org/techniques/skipnav/"]
+    "item": "Provide a skip link if necessary",
+    "resources": ["https://webaim.org/techniques/skipnav/"],
+    "tags": ["implementation", "html"]
   },
   {
     "item": "Avoid all-caps text",
-    "resources": ["https://github.com/humanmade/hm-pattern-library/issues/75"]
+    "resources": ["https://github.com/humanmade/hm-pattern-library/issues/75"],
+    "tags": ["visual-design"]
   },
   {
     "item": "Ensure that content is written as clearly and simply as possible",
-    "resources": ["https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html"]
+    "resources": ["https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html"],
+    "tags": ["content"]
   },
   {
-    "item": "Provide descriptive captions for figures"
+    "item": "Provide descriptive captions for figures",
+    "tags": ["content", "implementation", "html"]
   },
   {
-    "item": "Warn users of links that have unusual behaviors, like linking off-site, or loading a new tab"
+    "item": "Warn users of links that have unusual behaviors, like linking off-site, or loading a new tab",
+    "tags": ["visual-design", "implementation", "html"]
   },
   {
     "item": "Make content easier to find and improve search results with structured data",
-    "resources": ["https://developers.google.com/search/docs/guides/prototype"]
+    "resources": ["https://developers.google.com/search/docs/guides/prototype"],
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Use textual labels to make voice activation cues obvious"
+    "item": "Use textual labels to make voice activation cues obvious",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Do not mark up subheadings/straplines with separate heading elements"
+    "item": "Do not mark up subheadings/straplines with separate heading elements",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Ensure primary calls to action are easy to recognize and reach"
+    "item": "Ensure primary calls to action are easy to recognize and reach",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Avoid images of text — text that cannot be translated, selected, or understood by assistive tech"
+    "item": "Avoid images of text — text that cannot be translated, selected, or understood by assistive tech",
+    "tags": ["visual-design", "content"]
   },
   {
-    "item": "Provide a print stylesheet (single column, with interactive content hidden)"
+    "item": "Provide a print stylesheet (single column, with interactive content hidden)",
+    "tags": ["visual-design", "implementation", "css"]
   },
   {
-    "item": "Use well-established, therefore recognizable, icons and symbols"
+    "item": "Use well-established, therefore recognizable, icons and symbols",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Subset fonts to just the characters needed"
+    "item": "Subset fonts to just the characters needed",
+    "tags": ["implementation", "performance"]
   },
   {
     "item": "Instead of obstructing users with CAPTCHAs, use honeypots",
-    "resources": ["https://en.wikipedia.org/wiki/Honeypot_(computing)"]
+    "resources": ["https://en.wikipedia.org/wiki/Honeypot_(computing)"],
+    "tags": ["visual-design"]
   },
   {
-    "item": "Begin long, multi-section documents with a table of contents"
+    "item": "Begin long, multi-section documents with a table of contents",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Don\"t make users perform actions to reveal content unless completely necessary"
+    "item": "Don\"t make users perform actions to reveal content unless completely necessary",
+    "tags": ["visual-design"]
   },
   {
-    "item": "If content is meant to be hidden, ensure it is properly hidden to all users"
+    "item": "If content is meant to be hidden, ensure it is properly hidden to all users",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Make sure controls within hidden content are not focusable"
+    "item": "Make sure controls within hidden content are not focusable",
+    "tags": ["implementation", "html"]
   },
   {
-    "item": "Use `srcset` to tailor images to devices and reduce bandwidth costs"
+    "item": "Use `srcset` to tailor images to devices and reduce bandwidth costs",
+    "tags": ["implementation", "html", "performance"]
   },
   {
-    "item": "Do not auto focus form fields, on page load"
+    "item": "Do not auto focus form fields, on page load",
+    "tags": ["implementation", "javascript"]
   },
   {
-    "item": "Break up long and complex forms into discrete sections and/or screens"
+    "item": "Break up long and complex forms into discrete sections and/or screens",
+    "tags": ["visual-design"]
   },
   {
-    "item": "Make forms as short as possible; offer shortcuts like autocompleting the address using the postcode"
+    "item": "Make forms as short as possible; offer shortcuts like autocompleting the address using the postcode",
+    "tags": ["visual-design", "implementation", "html"]
   },
   {
-    "item": "Ensure the same content is available across different devices and platforms"
+    "item": "Ensure the same content is available across different devices and platforms",
+    "tags": ["visual-design", "content", "implementation"]
   },
   {
-    "item": "Inform the user when there are important changes to the application state"
+    "item": "Inform the user when there are important changes to the application state",
+    "tags": ["content"]
   },
   {
-    "item": "Make sure the purpose of a link is clearly described: \"read more\" vs. \"read more about accessibility\""
+    "item": "Make sure the purpose of a link is clearly described: \"read more\" vs. \"read more about accessibility\"",
+    "tags": ["content", "implementation", "html"]
   }
 ]
